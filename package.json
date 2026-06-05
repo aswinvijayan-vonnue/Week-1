@@ -1,0 +1,25 @@
+{
+  "name": "week-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswinvijayan-vonnue/Week-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aswinvijayan-vonnue/Week-1/issues"
+  },
+  "homepage": "https://github.com/aswinvijayan-vonnue/Week-1#readme",
+  "devDependencies": {
+    "eslint": "^10.4.1",
+    "prettier": "^3.8.3"
+  }
+}
