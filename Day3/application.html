@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <header>
+      <h1>Job Application form</h1>
+      <ol>
+        <li aria-current="step">Step 1</li>
+        <li>Step 2</li>
+        <li>Step 3</li>
+      </ol>
+    </header>
+    <main>
+      <form>
+        <fieldset aria-current="step">
+          <legend>Step 1: Personal Information</legend>
+          <p>
+            <label for="name">Name *</label>
+            <input type="text" id="name" required />
+          </p>
+          <p>
+            <label for="email">Email *</label>
+            <input type="email" id="email" required />
+          </p>
+          <p>
+            <label for="phone">Phone no. *</label>
+            <input type="tel" id="phone" required />
+          </p>
+          <p>
+            <label for="url">Linkedin URL</label>
+            <input type="url" id="url" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Step 2:Work Experience</legend>
+          <p>
+            <label for="crole">Current role *</label>
+            <input type="text" id="crole" required />
+          </p>
+          <p>
+            <label for="ccompany">Current company</label>
+            <input type="text" id="ccompany" />
+          </p>
+          <p>
+            <label for="exp">Years of Experience *</label>
+            <input type="number" min="0" max="50" id="exp" required />
+          </p>
+          <p>
+            <label for="achievement">Key Achievement &#40;Maximum 500 characters &#41; </label>
+            <input type="text" maxlength="500" id="achievement" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Step 3:Documents</legend>
+          <p>
+            <label for="cv">Upload CV &#40;In .pdf or .docx form&#41; *</label>
+            <input type="file" accept=".pdf,.docx" id="cv" required />
+          </p>
+          <p>
+            <label for="cover">Cover letter </label>
+            <input type="file" id="cover" />
+          </p>
+          <p>
+            <label for="purl">Portfolio URL</label>
+            <input type="url" id="purl" />
+          </p>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
