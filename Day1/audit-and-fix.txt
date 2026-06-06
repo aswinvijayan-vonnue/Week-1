@@ -1,0 +1,7 @@
+Initially,running Lighthouse on the article.html file showed a performance score of 100, accessibility at 96, best practices at 100, and an SEO score of 91.
+
+It flagged a warning because of document laked <main> land mark.
+
+After fixing the issue and rerunning the Lighthouse accessibility reached to 100 and SEO remains same.
+
+Additionally,axe devtools showed zero error.
