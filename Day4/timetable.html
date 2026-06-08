@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+    <title>Time Table</title>
+  </head>
+  <body>
+    <header><h1>Weekly Time Table</h1></header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="6">Time Table</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Hours</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <th><time datetime="09:00:00">9 AM</time> to <time datetime="10:00:00">10 AM</time></th>
+            <td>Maths</td>
+            <td colspan="2">Physics</td>
+            <td>Chemistry</td>
+            <td>Biology</td>
+          </tr>
+          <tr>
+            <th>
+              <time datetime="10:00:00">10 AM</time> to <time datetime="11:00:00">11 AM</time>
+            </th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td rowspan="2">Chemistry</td>
+            <td>English</td>
+            <td>Biology</td>
+          </tr>
+          <tr>
+            <th>
+              <time datetime="11:00:00">11 AM</time> to <time datetime="12:00:00">12 PM</time>
+            </th>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Biology</td>
+            <td>Chemistry</td>
+          </tr>
+          <tr>
+            <th><time datetime="13:00:00">1 PM</time> to <time datetime="14:00:00">2 PM</time></th>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>Maths</td>
+          </tr>
+          <tr>
+            <th><time datetime="14:00:00">2 PM</time> to <time datetime="15:00:00">3 PM</time></th>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td rowspan="2">Maths</td>
+            <td>Biology</td>
+          </tr>
+          <tr>
+            <th><time datetime="15:00:00">3 PM</time> to <time datetime="16:00:00">4 PM</time></th>
+            <td rowspan="2">Biology</td>
+            <td>Maths</td>
+            <td>Maths</td>
+            <td>Chemistry</td>
+          </tr>
+          <tr>
+            <th><time datetime="16:00:00">4 PM</time> to <time datetime="17:00:00">5 PM</time></th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>Physics</td>
+            <td>English</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
