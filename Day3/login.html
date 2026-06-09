@@ -9,34 +9,32 @@
     <header><h1>Login Form</h1></header>
     <main>
       <h2>Login</h2>
-      <div>
-        <label for="email">Email</label>
-        <p><input type="email" autocomplete="email" id="email" /></p>
-      </div>
-      <div>
-        <label for="password">Password</label>
+      <form>
         <p>
-          <input
-            type="password"
-            autocomplete="current-password"
-            id="password"
-            aria-describedby="pass-helper"
-          />
+          <label for="email">Email</label>
+          <input type="email" autocomplete="email" id="email" />
         </p>
+        <div>
+          <label for="password">Password</label>
+          <p>
+            <input
+              type="password"
+              autocomplete="current-password"
+              id="password"
+              aria-describedby="pass-helper"
+            />
+          </p>
 
-        <p id="pass-helper">Must be at least 8 characters</p>
-        <button type="button" id="togglebutton" aria-pressed="false">Show Password</button>
-      </div>
-      <div>
+          <p id="pass-helper">Must be at least 8 characters</p>
+          <button type="button" id="togglebutton" aria-pressed="false">Show Password</button>
+        </div>
         <p>
           <input type="checkbox" id="remember" value="yes" /><label for="remember"
             >Remember-me</label
           >
         </p>
-      </div>
-      <div>
         <p><input type="submit" /></p>
-      </div>
+      </form>
     </main>
   </body>
 </html>
