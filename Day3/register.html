@@ -34,8 +34,6 @@
             <input type="tel" id="telephone" />
           </p>
         </fieldset>
-      </form>
-      <form>
         <fieldset>
           <legend>Account</legend>
           <p>
@@ -74,8 +72,6 @@
             <label for="check">Remember me</label>
           </p>
         </fieldset>
-      </form>
-      <form>
         <fieldset>
           <legend>Preferences</legend>
           <p>
@@ -91,8 +87,6 @@
             <input type="color" id="color" />
           </p>
         </fieldset>
-      </form>
-      <form>
         <fieldset>
           <legend>Educational Information</legend>
           <p>
@@ -112,19 +106,32 @@
             <input type="time" id="time" />
           </p>
         </fieldset>
+        <fieldset>
+          <legend>Other Information</legend>
+          <p>
+            <label for="job">Job Title:</label>
+            <input type="text" id="job" list="options" />
+            <datalist id="options">
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Product Manager"></option>
+              <option value="HR"></option>
+              <option value="QA"></option>
+              <option value="Finance Manager"></option>
+              <option value="Teacher"></option>
+              <option value="Delivery Boy"></option>
+              <option value="Chef"></option>
+            </datalist>
+          </p>
+          <p>
+            <label for="ldatetime">Schedule your interview</label>
+            <input type="datetime-local" id="ldatetime" />
+          </p>
+          <p>
+            <label for="join">Enter Available Join Week</label>
+            <input type="week" id="join" />
+          </p>
+        </fieldset>
       </form>
-      <label for="job">Job Title:</label>
-      <input type="text" id="job" list="options" />
-      <datalist id="options">
-        <option value="Software Engineer">Software Engineer</option>
-        <option value="Product Manager"></option>
-        <option value="HR"></option>
-        <option value="QA"></option>
-        <option value="Finance Manager"></option>
-        <option value="Teacher"></option>
-        <option value="Delivery Boy"></option>
-        <option value="Chef"></option>
-      </datalist>
     </main>
   </body>
 </html>
