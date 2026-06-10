@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header><h1>Login Form</h1></header>
+    <main>
+      <h2>Login</h2>
+      <form>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" autocomplete="email" id="email" />
+        </p>
+        <div>
+          <label for="password">Password</label>
+          <p>
+            <input
+              type="password"
+              autocomplete="current-password"
+              id="password"
+              aria-describedby="pass-helper"
+            />
+          </p>
+
+          <p id="pass-helper">Must be at least 8 characters</p>
+          <button type="button" id="togglebutton" aria-pressed="false">Show Password</button>
+        </div>
+        <p>
+          <input type="checkbox" id="remember" value="yes" /><label for="remember"
+            >Remember-me</label
+          >
+        </p>
+        <p><input type="submit" /></p>
+      </form>
+    </main>
+  </body>
+</html>
