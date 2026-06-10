@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .skip-link {
+        opacity: 0.7;
+      }
+      .skip-link:hover {
+        opacity: 1;
+      }
+    </style>
+    <title>ARIA-Demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>ARIA Hands-On</h1>
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+    </header>
+    <main id="main-content">
+      <div role="search">
+        <label for="search">Search</label>
+        <input type="search" placeholder="Search" />
+      </div>
+      <div>
+        <label for="button">Close Menu</label>
+        <button aria-label="Close menu">X</button>
+      </div>
+      <div>
+        <label for="toggle button">Toggle button</label>
+        <button aria-expanded="false" aria-controls="menu-id">Toggle</button>
+      </div>
+      <div role="alert" aria-live="polite">Notification Div</div>
+
+      <div>
+        <h2>Form with Aria Attributes</h2>
+        <form>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Full Name"
+            aria-required="true"
+            aria-describedby="pname"
+          />
+          <p id="pname">Enter your full name</p>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" aria-required="true" aria-describedby="pmail" />
+          <p id="pmail">Enter valid email address</p>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="password"
+            aria-required="true"
+            aria-describedby="ppass"
+          />
+          <p id="ppass">Password must be atleast 8 characters</p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
