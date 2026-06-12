@@ -1,0 +1,27 @@
+Gone through all the forms created today and ran axe DevTools and Lighthouse Accessibility on each form which shows no error.
+This is the result obtained from Axe DevTools and Lighthouse Accessibility on each task.
+
+Task1: Login Form
+
+Accessibiity Score= 100
+Axe Devtool showed No error
+
+Task2: Full Registration form
+
+Accessibility Score= 100
+Axe Devtool showed no error
+
+Task3: Native HTML5 Validation
+
+Accessibility Score= 100
+Axe Devtool showed no error
+
+Task4: Payment Form
+
+Accessibility Score= 100
+Axe Devtool showed no error
+
+Task5: Multi- Section Application form
+
+Accessibility Score= 100
+Axe Devtool showed no error
