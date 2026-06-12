@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+  </head>
+  <body>
+    <header><h1>Validation Form</h1></header>
+    <main>
+      <form>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" required />
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            minlength="8"
+            pattern=".*[0-9].*"
+            title="Password contains minimum one number and atleast 8 characters"
+            required
+          />
+        </p>
+        <p>
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Age" min="18" max="99" />
+        </p>
+        <p>
+          <label for="weburl">Website URL</label>
+          <input type="url" id="weburl" />
+        </p>
+        <p>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" max="2026-06-06" required />
+        </p>
+        <p>
+            <p><input type="submit"></p>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
