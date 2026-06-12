@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+  </head>
+  <body>
+    <header><h1>Payment Form</h1></header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Fields marked * are required</legend>
+          <fieldset>
+            <legend>Delivery Address</legend>
+            <p>
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" required />
+            </p>
+            <p>
+              <label for="addr1">Address Line 1 *</label>
+              <input type="text" id="addr1" required />
+            </p>
+            <p>
+              <label for="addr2">Address Line 2 *</label>
+              <input type="text" id="addr2" required />
+            </p>
+            <p>
+              <label for="city">City *</label>
+              <input type="text" id="city" required />
+            </p>
+            <p>
+              <label for="pcode">Postcode *</label>
+              <input type="text" id="pcode" required />
+            </p>
+            <p>
+              <label for="country">Select Country *</label>
+              <select id="country">
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bengladesh">Bengladesh</option>
+                <option value="Srilanka">Srilanka</option>
+
+                <option value="Argentina">Argentina</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Canada">Canada</option>
+                <option value="Denmark">Denmark</option>
+
+                <option value="Egypt">Egypt</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Japan">Japan</option>
+
+                <option value="Kenya">Kenya</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Oman">Oman</option>
+                <option value="Spain">Spain</option>
+                <option value="Thailand">Thailand</option>
+              </select>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Details</legend>
+            <p>
+              <label for="cardnumber">Card Number *</label>
+              <input type="number" id="cardnumber" required />
+            </p>
+            <p>
+              <label for="month">Expiry Month and Year *</label>
+              <input type="month" id="month" required />
+            </p>
+            <div>
+              <label for="cvv">CVV *</label>
+              <input type="password" maxlength="4" id="cvv" aria-describedby="cvvrule" required />
+              <p id="cvvrule" role="tooltip">3 or 4 digits on the back of your card</p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Order Notes</legend>
+            <textarea
+              name="notes"
+              id="notes"
+              rows="4"
+              cols="50"
+              placeholder="Order Notes"
+            ></textarea>
+          </fieldset>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
